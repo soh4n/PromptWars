@@ -29,7 +29,7 @@ TEST_DISPLAY_NAME = "Test User"
 @pytest.fixture
 def firebase_user() -> FirebaseUser:
     """A fake FirebaseUser for dependency injection."""
-    return FirebaseUser(uid=TEST_FIREBASE_UID, email=TEST_EMAIL, name=TEST_DISPLAY_NAME)
+    return FirebaseUser(uid=TEST_FIREBASE_UID, email=TEST_EMAIL, name=TEST_DISPLAY_NAME, picture=None)
 
 
 @pytest.fixture
