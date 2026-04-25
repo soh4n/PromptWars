@@ -1,0 +1,101 @@
+/* Dashboard page styles — Claymorphism */
+.dashboard { position: relative; }
+.dash-loading { display: flex; align-items: center; justify-content: center; min-height: 60vh; }
+
+.dash-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+.dash-welcome h1 { font-size: 1.75rem; }
+.dash-welcome-sub { color: var(--text-secondary); margin-top: var(--space-xs); }
+
+/* Stat cards with claymorphism inner shadow */
+.stat-card {
+  padding: var(--space-lg);
+  text-align: center;
+  cursor: default;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  box-shadow: var(--shadow-clay-inset);
+}
+.stat-icon-streak { background: rgba(239, 68, 68, 0.12); color: #EF4444; }
+.stat-icon-xp { background: rgba(245, 158, 11, 0.12); color: var(--color-xp-gold); }
+.stat-icon-level { background: rgba(79, 70, 229, 0.12); color: var(--color-primary); }
+.stat-icon-topics { background: rgba(34, 197, 94, 0.12); color: var(--color-accent); }
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
+
+.dash-progress-card {
+  padding: var(--space-lg);
+  margin: var(--space-lg) 0;
+}
+.dash-progress-card h3 { margin-bottom: 0.75rem; }
+.dash-progress-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: var(--space-sm);
+}
+
+.dash-section-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+}
+
+.dash-sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+.dash-session-card {
+  padding: var(--space-lg);
+  text-decoration: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.dash-session-card:hover {
+  transform: translateY(-3px);
+}
+.dash-session-topic {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  margin-bottom: var(--space-sm);
+}
+.dash-session-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.dash-session-msgs { font-size: 0.8125rem; color: var(--text-muted); }
+.dash-session-continue {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}

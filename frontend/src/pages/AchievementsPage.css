@@ -1,0 +1,33 @@
+/* Achievements page styles — Claymorphism */
+.achievements-page h1 { margin-bottom: var(--space-xs); }
+.achv-subtitle { color: var(--text-secondary); margin-bottom: var(--space-xl); }
+.achv-section-title { font-size: 1.125rem; margin-bottom: var(--space-md); margin-top: var(--space-xl); }
+
+.achv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.achv-card {
+  padding: var(--space-lg);
+  text-align: center;
+  cursor: pointer;
+}
+
+.achv-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  box-shadow: var(--shadow-clay-inset);
+}
+.achv-earned .achv-icon { background: rgba(79, 70, 229, 0.12); color: var(--color-primary); }
+.achv-icon-locked { background: var(--border-subtle) !important; color: var(--text-muted) !important; }
+.achv-locked { opacity: 0.55; }
+
+.achv-name { font-size: 1rem; margin-bottom: var(--space-xs); }
+.achv-desc { font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 0.75rem; }

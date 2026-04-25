@@ -1,0 +1,53 @@
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# ── Virtual Environment ──────────────────────────────────────────
+.venv/
+venv/
+ENV/
+
+# ── IDE ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment / Secrets ────────────────────────────────────────
+.env
+.env.local
+.env.production
+!.env.example
+
+# ── Testing / Coverage ──────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Node / Frontend ─────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# ── OS ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Project-specific (do not commit) ────────────────────────────
+*.exe
+*.msi
+implementation_plan.md
+task.md
+intelligent_learning_assistant_plan.html
+.agent/
