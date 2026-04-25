@@ -1,0 +1,33 @@
+# ── Heavy directories that Docker/Cloud Build don't need pre-uploaded ──
+# npm ci runs inside the Docker build stage, so local node_modules is waste
+frontend/node_modules/
+node_modules/
+
+# Git history is never needed for builds
+.git/
+.github/
+
+# Python virtual envs & caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local-only config (secrets)
+.env
+.env.local
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# Dev scripts (not needed in container)
+scripts/
+
+# Gemini agent data
+.agent/
+.gemini/
