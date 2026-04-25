@@ -1,6 +1,6 @@
 /** Typed API client with auth token injection. */
 
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "http://localhost:8000" : "");
 
 async function getAuthToken(): Promise<string | null> {
   const { auth } = await import("./firebase");

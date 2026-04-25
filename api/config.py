@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     """Central configuration for the PromptWars LearnAI API."""
 
     # ── Google Cloud ──────────────────────────────────────────────
-    gcp_project_id: str = "promptwars-demo"
+    gcp_project_id: str = "promptwars-494401"
     gcp_region: str = "asia-south1"
 
     # ── PostgreSQL (Cloud SQL) ────────────────────────────────────
