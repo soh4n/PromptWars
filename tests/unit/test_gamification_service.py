@@ -69,9 +69,9 @@ class TestAwardXp:
         MockRepo.return_value.get_progress = AsyncMock(return_value=progress)
         MockRepo.return_value.update_xp = AsyncMock()
 
-        result = await award_xp(AsyncMock(), TEST_USER_ID, 50, "session_complete")
+        result = await award_xp(AsyncMock(), TEST_USER_ID, 600, "session_complete")
 
-        assert result["new_total"] == 430
+        assert result["new_total"] == 980
         assert result["level_up"] is True
         assert result["new_level"] > 3
 

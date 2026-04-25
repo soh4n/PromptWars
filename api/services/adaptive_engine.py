@@ -59,7 +59,7 @@ def get_xp_for_action(action: str, difficulty: int = 1) -> int:
 
 def calculate_level(total_xp: int) -> int:
     """Level = floor(sqrt(totalXP / 100)) + 1."""
-    return max(1, int(math.sqrt(total_xp / 100)) + 1)
+    return max(1, int(math.sqrt(max(0, total_xp) / 100)) + 1)
 
 
 def xp_for_level(level: int) -> int:
