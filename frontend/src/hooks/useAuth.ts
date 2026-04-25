@@ -12,7 +12,7 @@ import {
   onAuthStateChanged,
   type User,
 } from "../services/firebase";
-import { authApi, type UserProfile } from "../services/api";
+import { authApi } from "../services/api";
 import { useAuthStore } from "../store/authStore";
 
 export function useAuth() {
