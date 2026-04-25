@@ -6,7 +6,6 @@ Implements the full Context Pipeline on every request:
 """
 
 import time
-import uuid
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, status
@@ -90,7 +89,7 @@ async def chat(
 
     # Step 6: Award XP + check achievements
     xp_amount = get_xp_for_action("message", learning_session.difficulty_level)
-    xp_event = await award_xp(db, user.id, xp_amount, "chat_message")
+    await award_xp(db, user.id, xp_amount, "chat_message")
     earned = await check_achievements(db, user.id)
 
     # Step 7: Adapt difficulty

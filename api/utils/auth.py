@@ -14,10 +14,8 @@ import firebase_admin
 from fastapi import Depends, HTTPException, Request, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from firebase_admin import auth as firebase_auth, credentials
-from sqlalchemy.ext.asyncio import AsyncSession
 
 from api.config import settings
-from api.db.session import get_db
 
 logger = logging.getLogger(__name__)
 

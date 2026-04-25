@@ -7,7 +7,6 @@ always through intent_service or adaptive_engine.
 """
 
 import hashlib
-import json
 import time
 
 import vertexai

@@ -130,7 +130,7 @@ async def reset_password(request: ResetPasswordRequest) -> dict:
     """Send a password reset email via Firebase."""
     get_firebase_app()
     try:
-        link = firebase_auth.generate_password_reset_link(request.email)
+        firebase_auth.generate_password_reset_link(request.email)
         logger.info("Password reset link generated", extra={"email": request.email})
     except Exception as exc:
         logger.warning("Password reset failed: %s", exc)
